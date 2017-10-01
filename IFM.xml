@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmsimessage type="getoperationdetails" number="24" version="1.0" status="OK">
+	<operationdetails>
+		<gvid>33750605</gvid>
+		<name>Carry out 90,000km/6 Year Service Plus</name>
+		<opcode>S90KY6SP</opcode>
+		<warrcode>TNZFSP090GR060</warrcode>
+		<stdhr>1.10</stdhr>
+		<targethr>0.00</targethr>
+		<ist/>
+		<checksheets/>
+		<dealerclaimamount>0.00</dealerclaimamount>
+		<cappedprice>321.74</cappedprice>
+		<variants>
+			<variant>
+				<type>BAS</type>
+				<typeid>2845</typeid>
+				<code>BAS</code>
+				<name>Basic Operation</name>
+			</variant>
+		</variants>
+		<invoicelines>
+			<invoiceline>
+				<position>1</position>
+				<id>346251</id>
+				<desc>Carry out 90,000km/6 Year Service Plus.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>2</position>
+				<id>1992</id>
+				<desc>Includes:- Replace engine oil and oil filter.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>3</position>
+				<id>304913</id>
+				<desc>Inspect engine coolant level.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>4</position>
+				<id>159094</id>
+				<desc>Inspect cooling and heater system hoses.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>5</position>
+				<id>10648</id>
+				<desc>Inspect battery electrolyte, cleanliness and security.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>6</position>
+				<id>305767</id>
+				<desc>Inspect brake fluid level.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>7</position>
+				<id>2025</id>
+				<desc>Inspect drive belt.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>8</position>
+				<id>2004</id>
+				<desc>Inspect air filter element.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>9</position>
+				<id>49107</id>
+				<desc>Inspect water sediment accumulator.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>10</position>
+				<id>305768</id>
+				<desc>Inspect diesel fuel filter.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>11</position>
+				<id>46580</id>
+				<desc>Inspect power steering fluid level.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>12</position>
+				<id>159097</id>
+				<desc>Inspect wheel bearings.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>13</position>
+				<id>305771</id>
+				<desc>Inspect front brake pads and discs.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>14</position>
+				<id>2057</id>
+				<desc>Inspect rear brake shoes and drums.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>15</position>
+				<id>156965</id>
+				<desc>Inspect brake pipes and hoses.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>16</position>
+				<id>2042</id>
+				<desc>Inspect fuel cap, fuel lines and connections.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>17</position>
+				<id>159096</id>
+				<desc>Inspect steering wheel, rack, linkages and boots.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>18</position>
+				<id>2010</id>
+				<desc>Inspect ball joints and dust covers.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>19</position>
+				<id>304877</id>
+				<desc>Check drive shaft joints and boots.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>20</position>
+				<id>20758</id>
+				<desc>Inspect front and rear suspension.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>21</position>
+				<id>112117</id>
+				<desc>Inspect automatic transmission fluid level.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>22</position>
+				<id>2072</id>
+				<desc>Inspect transfer case oil level.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>23</position>
+				<id>305770</id>
+				<desc>Inspect front and rear differential oil level.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>24</position>
+				<id>5498</id>
+				<desc>Check exhaust system for security and leaks.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>25</position>
+				<id>2089</id>
+				<desc>Lubricate propeller shaft and tighten bolts.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>26</position>
+				<id>157879</id>
+				<desc>Inspect condition and pressures of all tyres including spare.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>27</position>
+				<id>157885</id>
+				<desc>Tighten wheel nuts to correct torque.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>28</position>
+				<id>159093</id>
+				<desc>Inspect condition of body and under body/chassis.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>29</position>
+				<id>1762</id>
+				<desc>Check brake pedal height and hand brake lever operation.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>30</position>
+				<id>1815</id>
+				<desc>Check lights, wiper/washers, horn and electrical systems.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>31</position>
+				<id>46563</id>
+				<desc>Inspect air conditioning operation.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>32</position>
+				<id>21016</id>
+				<desc>Inspect cabin air filter.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>33</position>
+				<id>21008</id>
+				<desc>Check for diagnostic trouble codes.</desc>
+			</invoiceline>
+			<invoiceline>
+				<position>34</position>
+				<id>2467</id>
+				<desc>Road test vehicle and report any defects.</desc>
+			</invoiceline>
+		</invoicelines>
+		<opparts>
+			<oppart>
+				<partnum>9043012031</partnum>
+				<name>Gasket, Drain/Filler Plug</name>
+				<qty>1.0000</qty>
+			</oppart>
+			<oppart>
+				<partnum>90915TB001</partnum>
+				<name>Filter Assembly, Engine Oil</name>
+				<qty>1.0000</qty>
+			</oppart>
+		</opparts>
+		<opsundries>
+			<opsundry>
+				<id>3511</id>
+				<sundrycode>OD</sundrycode>
+				<name>Oil Disposal</name>
+				<qty>1.00</qty>
+			</opsundry>
+			<opsundry>
+				<id>3531</id>
+				<sundrycode>SS</sundrycode>
+				<name>Shop Supplies</name>
+				<qty>1.00</qty>
+			</opsundry>
+			<opsundry>
+				<id>360670</id>
+				<sundrycode>MO156</sundrycode>
+				<name>Engine Oil (ACEA C2, 0W30 Preferred)</name>
+				<qty>7.50</qty>
+			</opsundry>
+		</opsundries>
+		<servicerecommendations>
+			<servicerecommendation>
+				<gvid>33750616</gvid>
+				<name>Replace Brake Fluid</name>
+				<opcode>SBFPP</opcode>
+				<warrcode>TNZFA0SBF   GUN126R0</warrcode>
+				<stdhr>0.40</stdhr>
+				<targethr>0.00</targethr>
+				<ist/>
+				<checksheets/>
+				<dealerclaimamount>0.00</dealerclaimamount>
+				<cappedprice>52.17</cappedprice>
+				<variants>
+					<variant>
+						<type>BAS</type>
+						<typeid>2845</typeid>
+						<code>BAS</code>
+						<name>Basic Operation</name>
+					</variant>
+				</variants>
+				<invoicelines>
+					<invoiceline>
+						<position>1</position>
+						<id>1226</id>
+						<desc>Replace brake fluid.</desc>
+					</invoiceline>
+					<invoiceline>
+						<position>2</position>
+						<id>1645</id>
+						<desc>Bleed brake system as per manufacturers procedure.</desc>
+					</invoiceline>
+				</invoicelines>
+				<opparts/>
+				<opsundries>
+					<opsundry>
+						<id>112404</id>
+						<sundrycode>BF1</sundrycode>
+						<name>Brake and Clutch Fluid (Dot 3 and 4)</name>
+						<qty>0.50</qty>
+					</opsundry>
+				</opsundries>
+				<preselected>1</preselected>
+			</servicerecommendation>
+			<servicerecommendation>
+				<gvid>33750620</gvid>
+				<name>Replace Diesel Fuel Filter</name>
+				<opcode>SDFFPP</opcode>
+				<warrcode>TNZFA0SDFF  GUN126R0</warrcode>
+				<stdhr>0.70</stdhr>
+				<targethr>0.00</targethr>
+				<ist/>
+				<checksheets/>
+				<dealerclaimamount>0.00</dealerclaimamount>
+				<cappedprice>104.35</cappedprice>
+				<variants>
+					<variant>
+						<type>BAS</type>
+						<typeid>2845</typeid>
+						<code>BAS</code>
+						<name>Basic Operation</name>
+					</variant>
+				</variants>
+				<invoicelines>
+					<invoiceline>
+						<position>1</position>
+						<id>305492</id>
+						<desc>Replace diesel fuel filter.</desc>
+					</invoiceline>
+					<invoiceline>
+						<position>2</position>
+						<id>6645</id>
+						<desc>Reassemble and test.</desc>
+					</invoiceline>
+				</invoicelines>
+				<opparts>
+					<oppart>
+						<partnum>233900L070</partnum>
+						<name>Element Assembly, Fuel Filter</name>
+						<qty>1.0000</qty>
+					</oppart>
+				</opparts>
+				<opsundries/>
+				<preselected>1</preselected>
+			</servicerecommendation>
+			<servicerecommendation>
+				<gvid>33750618</gvid>
+				<name>Replace Air Cleaner Element</name>
+				<opcode>SACEPP</opcode>
+				<warrcode>TNZFA0SACE  GUN126R0</warrcode>
+				<stdhr>0.10</stdhr>
+				<targethr>0.00</targethr>
+				<ist/>
+				<checksheets/>
+				<dealerclaimamount>0.00</dealerclaimamount>
+				<cappedprice>47.83</cappedprice>
+				<variants>
+					<variant>
+						<type>BAS</type>
+						<typeid>2845</typeid>
+						<code>BAS</code>
+						<name>Basic Operation</name>
+					</variant>
+				</variants>
+				<invoicelines>
+					<invoiceline>
+						<position>1</position>
+						<id>1206</id>
+						<desc>Replace air cleaner element.</desc>
+					</invoiceline>
+				</invoicelines>
+				<opparts>
+					<oppart>
+						<partnum>178010L040</partnum>
+						<name>Element, Air Cleaner Filter</name>
+						<qty>1.0000</qty>
+					</oppart>
+				</opparts>
+				<opsundries/>
+				<preselected>0</preselected>
+			</servicerecommendation>
+		</servicerecommendations>
+	</operationdetails>
+</dmsimessage>
