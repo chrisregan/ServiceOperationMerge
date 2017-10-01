@@ -21,7 +21,7 @@ class recommendationcollator {
 	
 	public static void main(String[] arguments){
 		try {
-		File inputFile = new File("Y:\\Documents\\__MLO Projects\\FOTF\\IFM.xml");
+		File inputFile = new File("Y:\\git\\ServiceOperationMerge\\IFM.xml");
 		SAXBuilder saxBuilder = new SAXBuilder();
 		Document document = saxBuilder.build(inputFile);
 		Element rootElement = document.getRootElement();
