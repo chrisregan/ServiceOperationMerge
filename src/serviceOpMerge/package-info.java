@@ -21,9 +21,16 @@ class recommendationcollator {
 	
 	public static void main(String[] arguments){
 		try {
-		File inputFile = new File("Y:\\git\\ServiceOperationMerge\\IFM.xml");
+		
+		//Specify Input File and Check relative path, output that to console	
+		File inputFile = new File(".\\IFM.xml");
+		System.out.println("Source XML: " + inputFile.getAbsolutePath());
+		
+		//Use SAX to ingest the input xml file
 		SAXBuilder saxBuilder = new SAXBuilder();
 		Document document = saxBuilder.build(inputFile);
+		
+		
 		Element rootElement = document.getRootElement();
 		Element childElement1 = rootElement.getChild(null);
 		Element childElement2 = childElement1.getChild(null);
@@ -35,7 +42,9 @@ class recommendationcollator {
 		System.out.println("CPR Testing Output: " + childElement1);
 		System.out.println("CPR Testing Output: " + childElement2);
 		System.out.println("CPR Testing Output: " + listedChildren1);
-		System.out.println("CPR Testing Output: " + childElement2.);
+		//System.out.println("CPR Testing Output: " + childElement2.);
+		
+		
 		
 		//List<Element> Operations = classElement.getChildren();
 		//System.out.println("Childern of Root :" + classElement.getChildren().toString());
