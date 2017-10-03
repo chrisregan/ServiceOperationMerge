@@ -11,7 +11,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-//import org.jdom2.Attribute;
+import org.jdom2.Content;
+import org.jdom2.Attribute;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
@@ -38,6 +39,17 @@ class recommendationcollator {
 		Element childElement1 = rootElement.getChild(null);
 		System.out.println("childElement1: " + childElement1);
 		
+		//Element Filter variables - super useful for like everything!
+		ElementFilter operationdetails = new org.jdom2.filter.ElementFilter("operationdetails");
+		ElementFilter gvid = new org.jdom2.filter.ElementFilter("gvid");
+		ElementFilter servicerecommendation = new org.jdom2.filter.ElementFilter("servicerecommendation");
+		ElementFilter invoiceline = new org.jdom2.filter.ElementFilter("invoiceline");
+		ElementFilter cappedprice = new org.jdom2.filter.ElementFilter("cappedprice");
+		ElementFilter desc = new org.jdom2.filter.ElementFilter("desc");
+		
+		
+		System.out.println("childElement1 Decendants: " + childElement1.getDescendants(gvid));
+		
 		Element childElement2 = childElement1.getChild(null);
 		System.out.println("childElement2: " + childElement2);
 		
@@ -49,13 +61,26 @@ class recommendationcollator {
 		System.out.println("listedChildren1: " + listedChildren1);
 		//System.out.println("listedChildren1: " + listedChildren1.toArray());
 		
-		
-		ElementFilter servicerecommendation = new org.jdom2.filter.ElementFilter("servicerecommendation");
-		for(Element opcode : rootElement.getDescendants(servicerecommendation)) {
-		    System.out.println(opcode.getChild(null));
+		//Parent Service Capped Price
+		for(Element operationdetailsElement : rootElement.getDescendants(operationdetails)) {
+		    System.out.println("Parent Capped Price: " +operationdetailsElement.getContent(cappedprice));
+		    Content cappedpricecontent =  operationdetailsElement.getContent(18);
+		    System.out.println("Parent Capped Price: " +cappedpricecontent);
+		    
 		}
 		
+		//Service Recommendations Capped Prices
+		for(Element servicerecommendationElement : rootElement.getDescendants(servicerecommendation)) {
+		    System.out.println("servicerecommendations Content?: " +servicerecommendationElement.getContent(cappedprice));
+		}
+		//Invoice Lines
+		//for(Element invoicelineElement : rootElement.getDescendants(invoiceline)) {
+		//    System.out.println("invoicelines?: " +invoicelineElement.getContent(desc));
+		//}
 		
+		//for (Content content : rootElement.getDescendants()) {
+		//	System.out.println("RootDecedentsContent: " + content.getValue());
+		//}
 		//System.out.println("Doc Content: " + document.getDescendants());
 				
 		//String cappedPrice = childElement2.getAttribute("cappedPrice").getValue();
