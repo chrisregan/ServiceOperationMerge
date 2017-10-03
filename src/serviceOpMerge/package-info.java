@@ -15,6 +15,7 @@ import java.util.List;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
+import org.jdom2.filter.ElementFilter;
 import org.jdom2.input.SAXBuilder;
 
 class recommendationcollator {
@@ -46,7 +47,15 @@ class recommendationcollator {
 		
 		List<Element> listedChildren1 = childElement1.getChildren(null);
 		System.out.println("listedChildren1: " + listedChildren1);
-		System.out.println("listedChildren1: " + listedChildren1.toArray());
+		//System.out.println("listedChildren1: " + listedChildren1.toArray());
+		
+		
+		ElementFilter servicerecommendation = new org.jdom2.filter.ElementFilter("servicerecommendation");
+		for(Element opcode : rootElement.getDescendants(servicerecommendation)) {
+		    System.out.println(opcode.getChild(null));
+		}
+		
+		
 		//System.out.println("Doc Content: " + document.getDescendants());
 				
 		//String cappedPrice = childElement2.getAttribute("cappedPrice").getValue();
