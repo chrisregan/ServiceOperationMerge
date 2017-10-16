@@ -9,6 +9,7 @@ package serviceOpMerge;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.lang.*;
 
@@ -53,7 +54,13 @@ class recommendationcollator {
 		
 		
 		System.out.println("childElement1 Decendants: " + childElement1.getDescendants(gvid));
-		
+
+	    List<String> list = new ArrayList<String>();
+	    for (String str : list)
+	    {
+	        System.out.println("for each demo string: " + str);
+	    }
+				
 		Element childElement2 = childElement1.getChild(null);
 		System.out.println("childElement2: " + childElement2);
 		
@@ -75,6 +82,12 @@ class recommendationcollator {
 		//Make a list of the children Elements of servicerecommendationElement
 		List <Element> servicerecommendationList = servicerecommendationElement.getChildren();
 		System.out.println("Service Recommendation List: " + servicerecommendationList);
+		for (Element Recommendation: servicerecommendationList)
+		{
+			Element recommndationCappedPrice = Recommendation.getChild("cappedprice");
+			Element recommndationDescription = Recommendation.getChild("name");
+			java.lang.System.out.println("Reommndation " + recommndationDescription.getValue() + " Price is " + recommndationCappedPrice.getValue());
+		}
 
 		//Count the Number of SR's in the List 
 		int servicerecommendationElementCount = servicerecommendationList.size();
