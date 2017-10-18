@@ -14,8 +14,7 @@ import org.jdom2.JDOMException;
 import org.jdom2.filter.ElementFilter;
 import org.jdom2.filter.Filter;
 import org.jdom2.input.SAXBuilder;
-
-import sun.awt.image.IntegerComponentRaster;
+import org.jdom2.output.XMLOutputter;
 
 import java.text.DecimalFormat;
 
@@ -100,6 +99,18 @@ public class OperationCompiler {
 		
 		// Need to add all the capped prices together here using an array (have all the values as floats already)
 		// Trick will be variably setting the array size based on the number of SR's where preselected equals 1
+		// managed this not by creating an array, but just starting with 0 and adding each one together as it went. No array needed.
+		
+		
+		//Original XML Input echoed out to console (whole document by the looks - need to figure out how to output an element+children only
+		XMLOutputter oldOperationDetailXML = new XMLOutputter();
+		oldOperationDetailXML.output(IFMXML, System.out);
+		
+		//New XML Output echoed out to console
+		XMLOutputter newOperationDetailXML = new XMLOutputter();
+		
+		//Need to figure out how to build new components with compiled prices, oplines etc. 
+		//New Document, or just adding XML to existing document.....
 		
 		}
 		catch(JDOMException e) {
