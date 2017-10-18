@@ -34,13 +34,8 @@ public class OperationCompiler {
 		SAXBuilder saxBuilder = new SAXBuilder();
 		Document IFMXML = saxBuilder.build(inputFile);
 		
-		//Keep a count of operations for building price array
-		int operationcount = 0;
-		
-		//Build Price Array
-		int[] cappedPricesArray;
-		cappedPricesArray = new int[operationcount];
-		
+		//Starting variable for adding the capped prices together
+		float totalpricevalueexgst = 0;
 		
 		//Get the top most element and display it
 		Element dmsimessage = IFMXML.getRootElement();
@@ -56,11 +51,10 @@ public class OperationCompiler {
 		String operationDetailcappedPriceString = operationDetailCappedPrice.getValue();
 		float cappedpricefloatvalue = Float.valueOf(operationDetailcappedPriceString);
 		
-		//add to the operation counter
-		operationcount++;
-
-			System.out.println("Operation Capped Price: " + cappedpricefloatvalue);
-			
+		System.out.println("Operation Capped Price: " + cappedpricefloatvalue);
+		
+		//Add the capped Price to the current total price
+		totalpricevalueexgst += cappedpricefloatvalue;
 			
 		// create an element for SR's
 		Element operationsr = operationdetail.getChild("servicerecommendations");
@@ -73,12 +67,10 @@ public class OperationCompiler {
 			{
 				String srpreselectedvalue = SRElement.getChild("preselected").getValue();
 				int srpreselectedvalueint = Integer.parseInt(srpreselectedvalue);
-				//System.out.println("Is SR Preselected (Mandatory): " + srpreselectedvalueint);
 				
 				// weed out the SR's that are not preselected (equal to 1)
 				if (srpreselectedvalueint == 1)
 				{
-					
 					
 					//Get the name of each preselected SR
 					Element srname = SRElement.getChild("name");
@@ -88,17 +80,23 @@ public class OperationCompiler {
 					String srcappedpricestring = srcappedprice.getValue();
 					float srcappedpricefloatvalue = Float.valueOf(srcappedpricestring);
 					
-					//add to the operation counter
-					operationcount++;
+					//Add the capped Price to the current total price
+					totalpricevalueexgst += srcappedpricefloatvalue;
 					
-					System.out.println("SR " + srname.getValue() + " is preselected and Capped Price is " + srcappedpricefloatvalue);
-					//System.out.println("Is SR Preselected (Mandatory): " + srpreselectedvalueint);
+					System.out.println("Service Recommendation " + srname.getValue() + " is required and Capped Price is $" + srcappedpricefloatvalue + " ex GST");
 				}
 			}
 		
-		System.out.println("Number of Operations to add to the array: " + operationcount);
+		//Create formatting rule for prices with 2 decimal places and default rounding
+		DecimalFormat formatedprice = new DecimalFormat();
+		formatedprice.setMaximumFractionDigits(2);
 		
-
+		//include GST and set as variable
+		float totalpricevalueincgst = (float) (totalpricevalueexgst*1.15);
+		
+		System.out.println("Total Price is $" + formatedprice.format(totalpricevalueexgst) + " excl. GST");
+		System.out.println("Total Price is $" + formatedprice.format(totalpricevalueincgst) + " incl. GST");
+		
 		
 		// Need to add all the capped prices together here using an array (have all the values as floats already)
 		// Trick will be variably setting the array size based on the number of SR's where preselected equals 1
